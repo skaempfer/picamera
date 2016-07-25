@@ -1994,7 +1994,7 @@ class PiCamera(object):
             cc.stills_yuv422 = 0
             cc.one_shot_stills = 1
             cc.max_preview_video_w = resolution.width
-            cc.max_preview_video_h = resolution.height
+            cc.max_preview_video_h = resolution.height * 4
             cc.num_preview_video_frames = max(3, framerate // 10)
             cc.stills_capture_circular_buffer_height = 0
             cc.fast_preview_resume = 0
